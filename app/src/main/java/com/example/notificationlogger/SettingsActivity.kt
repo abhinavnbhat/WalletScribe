@@ -26,7 +26,9 @@ class SettingsActivity : AppCompatActivity() {
 
         binding.btnSave.setOnClickListener {
             val sheetId = binding.etSheetId.text.toString().trim()
-            val creds   = binding.etCredentials.text.toString().trim()
+            // CLEANSE the raw pasted text:
+            val credsRaw = binding.etCredentials.text.toString()
+            val creds    = sanitizeJson(credsRaw)
 
             if (sheetId.isEmpty() || creds.isEmpty()) {
                 Toast.makeText(this, "Both fields are required", Toast.LENGTH_SHORT).show()
@@ -41,16 +43,33 @@ class SettingsActivity : AppCompatActivity() {
 
             // 2) Persist under uppercase keys:
             prefs.edit()
-                .putString("SHEET_ID"    , sheetId)
-                .putString("CREDS_JSON"  , creds)
+                .putString("SHEET_ID",   sheetId)
+                .putString("CREDS_JSON", creds)
                 .apply()
 
             // 3) Debug log to confirm what you just saved:
-            Log.d("PrefsDebug", "just saved SHEET_ID → '$sheetId'")
+            Log.d("PrefsDebug", "just saved SHEET_ID   → '$sheetId'")
             Log.d("PrefsDebug", "just saved CREDS_JSON → ${creds.take(50)}…")
 
             Toast.makeText(this, "Settings saved", Toast.LENGTH_SHORT).show()
             finish()
         }
+    }
+
+    /**
+     * Strip out any non-breaking spaces, drop everything before the first '{'
+     * and after the last '}', then trim normal whitespace.
+     */
+    private fun sanitizeJson(raw: String): String {
+        // Normalize NBSP → space
+        var s = raw.replace('\u00A0', ' ')
+        // Find the very first '{' and last '}'
+        val first = s.indexOf('{')
+        val last  = s.lastIndexOf('}')
+        if (first >= 0 && last > first) {
+            s = s.substring(first, last + 1)
+        }
+        // Finally, trim normal whitespace/newlines
+        return s.trim()
     }
 }
