@@ -1,0 +1,42 @@
+# === Android/Gradle ===
+# Gradle wrapper files
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Gradle build directories
+.gradle/
+**/build/
+
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated native files
+.cxx/
+.externalNativeBuild/
+
+# === Android Studio / IntelliJ ===
+*.iml
+.idea/
+
+# Ignore all IntelliJ module files, but keep .gitignore itself
+!/.gitignore
+
+# === Local config ===
+/local.properties        # SDK path, kept out of VCS
+
+# === Captures / Misc ===
+/captures/               # Android Studio screenshots
+
+# === macOS ===
+.DS_Store
+
+# === Logs ===
+*.log
