@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "NotificationLogger"
+rootProject.name = "WalletScribe"
 include(":app")

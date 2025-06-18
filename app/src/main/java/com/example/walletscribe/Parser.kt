@@ -1,4 +1,4 @@
-package com.example.notificationlogger
+package com.example.walletscribe
 
 import android.app.Notification
 import android.service.notification.StatusBarNotification

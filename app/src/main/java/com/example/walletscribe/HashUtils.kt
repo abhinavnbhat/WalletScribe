@@ -1,4 +1,4 @@
-package com.example.notificationlogger
+package com.example.walletscribe
 
 import java.security.MessageDigest
 

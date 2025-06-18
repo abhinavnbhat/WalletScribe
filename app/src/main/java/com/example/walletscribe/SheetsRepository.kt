@@ -1,4 +1,4 @@
-package com.example.notificationlogger
+package com.example.walletscribe
 
 import com.google.api.services.sheets.v4.Sheets
 import com.google.api.services.sheets.v4.model.ValueRange

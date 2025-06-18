@@ -1,4 +1,4 @@
-package com.example.notificationlogger.data.model
+package com.example.walletscribe.data.model
 
 import java.util.Date
 

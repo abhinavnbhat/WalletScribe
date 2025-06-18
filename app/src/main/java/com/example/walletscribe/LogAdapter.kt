@@ -1,4 +1,4 @@
-package com.example.notificationlogger
+package com.example.walletscribe
 
 import android.view.LayoutInflater
 import android.view.View

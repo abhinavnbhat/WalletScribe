@@ -1,8 +1,7 @@
-package com.example.notificationlogger
+package com.example.walletscribe
 
 import android.content.Context
 import android.service.notification.NotificationListenerService
-import android.service.notification.StatusBarNotification
 import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

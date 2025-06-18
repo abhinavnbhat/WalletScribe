@@ -1,4 +1,4 @@
-package com.example.notificationlogger
+package com.example.walletscribe
 
 data class WalletTxn(
     val amount: String,     // e.g. "$12.34"

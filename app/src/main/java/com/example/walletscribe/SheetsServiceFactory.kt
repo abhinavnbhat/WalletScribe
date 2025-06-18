@@ -1,4 +1,4 @@
-package com.example.notificationlogger
+package com.example.walletscribe
 
 import android.content.Context
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential
@@ -10,7 +10,7 @@ import java.io.ByteArrayInputStream
 
 object SheetsServiceFactory {
 
-    private const val APPLICATION_NAME = "NotificationLogger"
+    private const val APPLICATION_NAME = "WalletScribe"
 
     fun create(context: Context): Sheets {
         // 1) Load the JSON string the user pasted in Settings

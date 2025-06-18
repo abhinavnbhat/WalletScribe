@@ -1,4 +1,4 @@
-package com.example.notificationlogger.data.model
+package com.example.walletscribe.data.model
 
 /**
  * Represents a transaction notification (e.g., from Google Wallet or banking apps).

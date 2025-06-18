@@ -1,4 +1,4 @@
-package com.example.notificationlogger.data.model
+package com.example.walletscribe.data.model
 
 /**
  * Represents a general notification (non-transaction).

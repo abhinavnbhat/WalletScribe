@@ -1,6 +1,5 @@
-package com.example.notificationlogger
+package com.example.walletscribe
 
-import android.app.NotificationManager
 import android.content.Context
 import android.content.Intent
 import android.provider.Settings

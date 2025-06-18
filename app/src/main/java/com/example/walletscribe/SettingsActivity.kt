@@ -1,11 +1,11 @@
-package com.example.notificationlogger
+package com.example.walletscribe
 
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.notificationlogger.databinding.ActivitySettingsBinding
+import com.example.walletscribe.databinding.ActivitySettingsBinding
 
 class SettingsActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySettingsBinding

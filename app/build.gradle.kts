@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.notificationlogger"
+    namespace = "com.example.walletscribe"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.notificationlogger"
+        applicationId = "com.example.walletscribe"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

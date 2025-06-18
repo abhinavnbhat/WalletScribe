@@ -1,10 +1,10 @@
-package com.example.notificationlogger
+package com.example.walletscribe
 
 import android.service.notification.NotificationListenerService
 import android.service.notification.StatusBarNotification
 import android.util.Log
-import com.example.notificationlogger.data.model.TransactionNotification
-import com.example.notificationlogger.data.model.GeneralNotification
+import com.example.walletscribe.data.model.TransactionNotification
+import com.example.walletscribe.data.model.GeneralNotification
 import com.google.common.hash.Hashing
 import java.nio.charset.StandardCharsets
 
